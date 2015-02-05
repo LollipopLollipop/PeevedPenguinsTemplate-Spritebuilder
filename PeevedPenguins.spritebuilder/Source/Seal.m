@@ -9,6 +9,9 @@
 #import "Seal.h"
 
 @implementation Seal
+
+// For test purpose
+/*
 - (id)init {
     self = [super init];
     
@@ -17,5 +20,5 @@
     }
     
     return self;
-}
+}*/
 @end

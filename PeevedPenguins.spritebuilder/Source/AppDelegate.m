@@ -54,8 +54,9 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
-    [CCBReader load:@"Penguin"];
-    [CCBReader load:@"Seal"];
+    // Test if the code connection for the two classes are built 
+    //[CCBReader load:@"Penguin"];
+    //[CCBReader load:@"Seal"];
     
     return YES;
 }
