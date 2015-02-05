@@ -47,4 +47,10 @@
     [self runAction:follow];
 }
 
+// called when press the "reset" button
+- (void)retry {
+    // reload this level
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
+}
+
 @end
