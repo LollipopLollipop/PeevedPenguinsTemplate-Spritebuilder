@@ -35,12 +35,11 @@
 }
 
 // called on every touch in this scene-old version
-
+/*
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     [self launchPenguin];
-}
+}*/
 
-/*
 -(void) touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     CGPoint touchLocation = [touch locationInNode:_contentNode];
@@ -54,11 +53,11 @@
         // setup a spring joint between the mouseJointNode and the catapultArm
         _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
     }
-}*/
+}
 
 // Whenever a touch moves, we need to update the position of the mouseJointNode,
 // so that the catapult arm is dragged in the correct direction.
-/*
+
 - (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     // whenever touches move, update the position of the mouseJointNode to the touch position
@@ -87,7 +86,6 @@
     // when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
 }
-*/
 // called when press the "reset" button
 
 - (void)retry {
