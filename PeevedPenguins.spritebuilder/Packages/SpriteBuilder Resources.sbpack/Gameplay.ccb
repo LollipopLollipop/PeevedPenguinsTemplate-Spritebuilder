@@ -1437,7 +1437,7 @@
 					</dict>
 				</array>
 				<key>customClass</key>
-				<string>Gameplay</string>
+				<string></string>
 				<key>displayName</key>
 				<string>CCNode</string>
 				<key>memberVarAssignmentName</key>
@@ -1586,7 +1586,7 @@ _contentNode</string>
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>retry</string>
+							<string></string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -1841,6 +1841,8 @@ _contentNode</string>
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -1913,8 +1915,6 @@ _contentNode</string>
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
