@@ -86,6 +86,13 @@
     [self releaseCatapult];
 }
 
+// called when press the "reset" button
+- (void)retry {
+    // reload this level
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
+}
+
+
 
 - (void)launchPenguin {
     // loads the Penguin.ccb we have set up in Spritebuilder
@@ -111,12 +118,6 @@
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [_contentNode runAction:follow];
-}
-
-// called when press the "reset" button
-- (void)retry {
-    // reload this level
-    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
 }
 
 @end
