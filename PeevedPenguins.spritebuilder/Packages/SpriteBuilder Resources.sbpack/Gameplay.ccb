@@ -854,6 +854,8 @@
 										<array/>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1343,8 +1345,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -1633,7 +1633,7 @@ _contentNode</string>
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Reset</string>
+							<string>Retry</string>
 							<false/>
 						</array>
 					</dict>
