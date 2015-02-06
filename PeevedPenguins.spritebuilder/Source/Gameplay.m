@@ -12,7 +12,6 @@
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
     CCNode *_levelNode;
-    CCNode *_contentNode;
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
@@ -58,6 +57,7 @@
 
 // Whenever a touch moves, we need to update the position of the mouseJointNode,
 // so that the catapult arm is dragged in the correct direction.
+/*
 - (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     // whenever touches move, update the position of the mouseJointNode to the touch position
@@ -86,7 +86,7 @@
     // when touches are cancelled, meaning the user drags their finger off the screen or onto something else, release the catapult
     [self releaseCatapult];
 }
-
+*/
 // called when press the "reset" button
 
 - (void)retry {
@@ -110,12 +110,7 @@
     [penguin.physicsBody applyForce:force];
     
     // ensure followed object is in visible are when starting
-    /*
-    self.position = ccp(0, 0);
-    CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
-    [self runAction:follow];*/
     
-    // ensure followed object is in visible are when starting
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
     [self runAction:follow];
