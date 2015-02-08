@@ -9,5 +9,7 @@
 #import "CCSprite.h"
 
 @interface Penguin : CCSprite
+//avoid next attempt before it has been launched
+@property (nonatomic, assign) BOOL launched;
 
 @end
