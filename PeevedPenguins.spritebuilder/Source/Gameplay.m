@@ -37,7 +37,7 @@ static const float MIN_SPEED = 5.f;
     [_levelNode addChild:level];
     
     // visualize physics bodies & joints
-    _physicsNode.debugDraw = TRUE;
+    //_physicsNode.debugDraw = TRUE;
     
     // nothing shall collide with our invisible nodes
     _pullbackNode.physicsBody.collisionMask = @[];
