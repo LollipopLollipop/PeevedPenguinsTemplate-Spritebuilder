@@ -8,6 +8,7 @@
 
 #import "Gameplay.h"
 
+
 @implementation Gameplay{
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
@@ -35,6 +36,9 @@
     _pullbackNode.physicsBody.collisionMask = @[];
     
     _mouseJointNode.physicsBody.collisionMask = @[];
+    
+    //sign up as the collision delegates of our physics node
+    _physicsNode.collisionDelegate = self;
 }
 
 // called on every touch in this scene-old version
@@ -127,6 +131,10 @@
     [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
 }
 
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
+{
+    CCLOG(@"Something collided with a seal!");
+}
 
 - (void)launchPenguin {
     // loads the Penguin.ccb we have set up in Spritebuilder
